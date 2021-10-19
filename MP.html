@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!--Encoding-->
+        <meta charset="UF-8">
+        <!--Description-->
+        <meta name="description" content="A easy mid-term practice.">
+        <!--Viewport-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Title-->>
+        <title>Mid-term Practice</title>
+
+        <!--css的嵌入式样式-->
+        <!--Class Defination-->>
+        <style type="text/css">
+            div.Container {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                width: 100%;
+                height: 200%;
+                background-color: orange;
+            }
+            div.Top {
+                position: absolute;
+                width: 90%;
+                height: 150px;
+                background-color: rgb(241, 211, 77);
+            }
+            div.Menu {
+                width: 20%;
+                height: 73.5%;
+                background-color: wheat;
+                float: left;
+            }
+            div.Intro {
+                width: 70%;
+                height: 73.5%;
+                background-color: rgb(211, 211, 211, 0.5);
+                float: left;
+            }
+
+            p.Title {
+                text-align: center;
+                font-size: 30px;
+                text-shadow: 20px 20px 10px grey;
+            }
+            p.Title:active {
+                visibility: hidden;
+            }
+
+            ul.ulMenu {
+                position: relative;
+                top: 0px;
+                font-size: 15px;
+                list-style-type: none;
+                width: 200px;
+            }
+            li a {
+                display: block;
+                text-decoration: none;
+                padding: 0px 0px;
+            }
+            li a:hover{
+                width: 170px;
+                background-color: rgba(172, 133, 133, 0.8);
+                color: white;
+            }
+            li a:active {
+                width: 170px;
+                background-color: rgba(161, 115, 115, 0.8);
+                color: white;
+            }
+
+            h1.HomeH1 {
+                position: relative;
+                text-align: left;
+                left: 20px;
+                top: 0px;
+            }
+            p.HomeP {
+                position: relative;
+                text-align: left;
+                left: 20px;
+                top: 0px;
+                font-size: 20px;
+            }
+            div.PhotoBefore {
+                position: relative;
+                left: 400px;
+                width: 250px;
+                height: 250px;
+                background: url(Pictures/5.jpg) no-repeat;
+                border-radius: 70%;
+                box-shadow: inset 0 0 0 16px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1);
+                transition: all 0.4s ease-in-out;
+            }
+            div.PhotoAfter {
+                opacity: 0;
+                transform: scale(0);
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: url(Pictures/6.jpg) no-repeat;
+                border-radius: 50%;
+                transition: all 0.4s ease-in-out;
+            }
+            div.PhotoBefore:hover {
+                box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
+            }
+            div.PhotoBefore:hover div.PhotoAfter {
+                opacity: 1;
+                transform: scale(1);
+            }
+            h1.SIH1 {
+                position: relative;
+                text-align: left;
+                left: 20px;
+                top: 50px;
+            }
+            p.SIP {
+                position: relative;
+                text-align: left;
+                left: 20px;
+                top: 50px;
+                font-size: 20px;
+            }
+            h1.SthIH1 {
+                position: relative;
+                text-align: left;
+                left: 20px;
+                top: 50px;
+            }
+            p.SthIP {
+                position: relative;
+                text-align: left;
+                left: 20px;
+                top: 50px;
+                font-size: 20px;
+            }
+        </style>
+
+        <!--Music-->
+        <embed src="Music/OP12.mp3" hidden="true" autostart="true" loop="true"></embed>
+    </head>
+
+    <body>
+        <!--Container-->
+        <div id="all" class="Container">
+
+            <!--Page Title-->
+            <div id="top" class="Top">
+                <p class="Title">Hello,world!</p>
+                <p style="text-align: center;">⬆<br>click me</p>
+            </div>
+
+            <div>
+                <img src="Pictures/1.jpg" width=90%>
+            </div>
+
+            <!--Menu-->
+            <div id="menu" class="Menu">
+                <!--无序列表-->
+                <ul class="ulMenu">
+                    <li><a href="#home">Home</li>
+                    <li><a href="#SI">Self Introduction</a></li>
+                    <li><a href="#SthI">Something Interesting</a></li>
+                </ul>
+            </div>
+
+            <!--Introduction-->
+            <div id="introduction-part1" class="Intro">
+                <!--Home-->
+                <h1 id="home" class="HomeH1">Home</h1>
+                <p class="HomeP">Let's start~</p>
+                <hr style="height: 2px;border:none;border-top: 2px dotted grey"/>
+
+                <!--Self Introduction-->
+                <h1 id="SI" class="SIH1">Self Introduction</h1>
+                <div class="PhotoBefore">
+                    <div class="PhotoAfter">
+                    </div>
+
+                    <div>
+                        <p style="position: relative;top: 250px;">Hover your mouse on the photo.<br>(Before & After I come to Hongkong.)</p>
+                    </div>
+                </div>
+                <p class="SIP">Hi, dear visitor, you can call me <strong>Eddie</strong>.</p>
+                <p class="SIP">I wonder if you smile when you see "Hello, world"? </p>
+                <p class="SIP">Yes, I am actually a <small>programmer</small>. Well, what I want to do most now is a <mark>game developer</mark>.</p>
+                <p class="SIP">As for that "click me" is just a curious test of my hidden text. I hope you don't have too many doubts because of my "bad taste". <sup>Hahaha</sup> </p>
+                <p class="SIP">Now I am studying MET major in our school. I am very happy to have the opportunity <br>to take this course this semester! </p>
+                <div style="position: relative;top: 50px;">
+                    <hr style="height: 2px;border:none;border-top: 2px ridge grey"/>
+                </div>
+
+                <!--Sth Interesting-->
+                <h1 id="SthI" class="SthIH1">More details</h1>
+                <div style="position: relative;top: 50px;">
+                    <img src="Pictures/2.jpg" position=relative top=300px width=90%>
+                </div>
+                <p class="SthIP">The above illustration is my favorite animation-Naruto. </p>
+                <div style="position: relative;top: 50px;">
+                    <img src="Pictures/3.gif" width=45%>
+                    <img src="Pictures/4.gif" width=45%>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
